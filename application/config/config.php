@@ -14,7 +14,7 @@
 | path to your installation.
 |
 */
-$config['base_url']	= 'http://localhost/CodeIgniter/index.php';
+$config['base_url']	= 'http://localhost/Proyecto2/index.php';
 
 /*
 |--------------------------------------------------------------------------

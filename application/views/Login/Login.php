@@ -2,23 +2,16 @@
 <html>
   <head>
     <title>
-      Ingresar clientes
+      LOGIN
     </title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
+    
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet" />
     
     <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
     
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js">
-</script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js">
-</script>
-<![endif]-->
+    
     
     <style>
       
@@ -69,31 +62,22 @@
   <div class="row">
 
     <div class="main">
-
-      <h3>Please Log In, or <a href="#">Sign Up</a></h3>
-      <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6">
-          <a href="#" class="btn btn-lg btn-primary btn-block">Facebook</a>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6">
-          <a href="#" class="btn btn-lg btn-info btn-block">Google</a>
-        </div>
-      </div>
-      <div class="login-or">
-        <hr class="hr-or">
-        <span class="span-or">or</span>
-      </div>
+      
 
       <form role="form" action="<?php echo base_url();?>login/Autenticar" method="Post">
         <div class="form-group">
           <label for="inputUsernameEmail">Usuario</label>
           <input type="text" class="form-control" id="usuario" name="usuario">
         </div>
+        <br>
         <div class="form-group">
           <a class="pull-right" href="#">Forgot password?</a>
           <label for="inputPassword">Clave</label>
           <input type="password" class="form-control" id="clave" name="clave">
         </div>
+        
+      <br>
+      <br>
         <div class="checkbox pull-right">
           <label>
             <input type="checkbox">
@@ -102,7 +86,17 @@
         <button type="submit" class="btn btn btn-primary">
           Log In
         </button>
+      <div class="row">
+        <br>
+        <form role="form" >
+        <div class="col-xs-6 col-sm-6 col-md-6">
+          <a href="Estudiante/Crear"  class="btn btn-lg btn-info btn-block">Registrarse</a>
+        </div>
       </form>
+      </div>
+      </form>
+      <br>
+      
     
     </div>
     

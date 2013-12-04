@@ -14,7 +14,7 @@ class Login extends CI_Controller {
 
 		if(($usuario=="avantica") && ($clave=="123"))
 		{
-			redirect(base_url()."Cliente");
+			redirect(base_url()."Estudiante");
 		}
 		$this->load->view('Login/Login');
 

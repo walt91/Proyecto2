@@ -1,7 +1,6 @@
 
 <?php
-if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+if (!defined('BASEPATH')) exit('No direct script access allowed');
 
 class ClienteModel extends CI_Model
 {
@@ -14,10 +13,9 @@ class ClienteModel extends CI_Model
         
     }
     
-    public function Crear($cliente)
+    public function Crear($estudiante)
     {
-        //$this->output->append_output(var_dump($cliente));
-        if ($this->db->insert("cliente", $cliente)) {
+        if ($this->db->insert("estudiante", $estudiante)) {
             return true;
         } else {
             return false;
@@ -26,22 +24,22 @@ class ClienteModel extends CI_Model
     
     public function ListaClientes()
     {
-        $query = $this->db->get('cliente');
+        $query = $this->db->get('Estudiante');
         return $query->result_array();
     }
     
     public function ObtenerCliente($id)
     {
-        $this->db->where('id', $id);
-        $query = $this->db->get('cliente');
+        $this->db->where('Id_Estudiante', $id);
+        $query = $this->db->get('Estudiante');
         return $query->row();
     }
     
-    public function Editar($id, $cliente)
+    public function Editar($id, $estudiante)
     {
         var_dump($id);
-        $this->db->where('Id', $id);
-        if ($this->db->update('cliente', $cliente)) {
+        $this->db->where('Id_Estudiante', $id);
+        if ($this->db->update('Estudiante', $estudiante)) {
             return true;
         } else {
             return false;
@@ -51,8 +49,8 @@ class ClienteModel extends CI_Model
     public function Eliminar($id)
     {
         var_dump($id);
-        $this->db->where('Id', $id);
-        if ($this->db->delete('cliente')) {
+        $this->db->where('Id_Estudiante', $id);
+        if ($this->db->delete('Estudiante')) {
             return true;
         } else {
             return false;
